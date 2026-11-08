@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Zilan révise le droit constit'</title>
+  <meta name="description" content="Fiches, flashcards et quiz de droit constitutionnel, faits avec amour pour Zilan.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-blobs" aria-hidden="true"><span></span><span></span><span></span></div>
+
+  <header class="topbar">
+    <a class="brand" href="#accueil" data-nav="accueil">
+      <span class="brand-emoji">⚖️</span>
+      <span class="brand-txt">Zilan<span class="brand-dot">.</span>constit</span>
+    </a>
+    <nav class="tabs" aria-label="Navigation">
+      <a href="#accueil" data-nav="accueil"><span>🏠</span><b>Accueil</b></a>
+      <a href="#fiches" data-nav="fiches"><span>📚</span><b>Fiches</b></a>
+      <a href="#flash" data-nav="flash"><span>🃏</span><b>Flashcards</b></a>
+      <a href="#quiz" data-nav="quiz"><span>🎯</span><b>Quiz</b></a>
+      <a href="#memo" data-nav="memo"><span>📌</span><b>Pense-bête</b></a>
+    </nav>
+  </header>
+
+  <main id="app">
+
+    <!-- ================= ACCUEIL ================= -->
+    <section class="view" id="view-accueil">
+      <div class="hero card">
+        <div class="hero-text">
+          <p class="kicker">Révisions de droit constitutionnel</p>
+          <h1>Coucou <span class="grad">Zilan</span> 💖</h1>
+          <p class="lead">Tout ton cours en fiches, flashcards et quiz. Maître Moustache, l'avocat le moins sérieux du barreau, t'accompagne. Il a eu son diplôme par correspondance.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#quiz" data-nav="quiz">Lancer un quiz 🎯</a>
+            <a class="btn btn-ghost" href="#fiches" data-nav="fiches">Lire les fiches 📚</a>
+          </div>
+        </div>
+        <div class="hero-mascot">
+          <div class="bubble" id="bubble">Objection ! Tu es beaucoup trop forte.</div>
+          <button class="mascot-btn" id="mascotBtn" aria-label="Caresser Maître Moustache">
+            <svg class="mascot" viewBox="0 0 200 200" aria-hidden="true">
+              <!-- ears -->
+              <path d="M45 78 L52 22 L92 58 Z" fill="#f7c59f" stroke="#5b3a29" stroke-width="5" stroke-linejoin="round"/>
+              <path d="M155 78 L148 22 L108 58 Z" fill="#f7c59f" stroke="#5b3a29" stroke-width="5" stroke-linejoin="round"/>
+              <path d="M56 62 L59 38 L78 55 Z" fill="#ff9fb8"/>
+              <path d="M144 62 L141 38 L122 55 Z" fill="#ff9fb8"/>
+              <!-- head -->
+              <ellipse cx="100" cy="112" rx="72" ry="62" fill="#f7c59f" stroke="#5b3a29" stroke-width="5"/>
+              <!-- judge wig curls -->
+              <g fill="#fffaf3" stroke="#5b3a29" stroke-width="4">
+                <circle cx="62" cy="62" r="14"/><circle cx="84" cy="52" r="15"/><circle cx="108" cy="50" r="15"/><circle cx="132" cy="56" r="14"/><circle cx="148" cy="70" r="12"/><circle cx="50" cy="78" r="11"/>
+              </g>
+              <!-- eyes -->
+              <g class="eyes">
+                <ellipse cx="74" cy="110" rx="9" ry="11" fill="#2d1f17"/>
+                <ellipse cx="126" cy="110" rx="9" ry="11" fill="#2d1f17"/>
+                <circle cx="77" cy="106" r="3.5" fill="#fff"/><circle cx="129" cy="106" r="3.5" fill="#fff"/>
+              </g>
+              <!-- monocle -->
+              <circle cx="126" cy="110" r="17" fill="none" stroke="#c9a227" stroke-width="4"/>
+              <path d="M143 114 Q158 140 150 170" fill="none" stroke="#c9a227" stroke-width="2.5"/>
+              <!-- blush -->
+              <ellipse cx="58" cy="132" rx="11" ry="7" fill="#ff9fb8" opacity=".75"/>
+              <ellipse cx="142" cy="132" rx="11" ry="7" fill="#ff9fb8" opacity=".75"/>
+              <!-- nose & mouth -->
+              <path d="M94 124 L106 124 L100 131 Z" fill="#e8738f"/>
+              <path d="M100 131 Q100 142 88 140 M100 131 Q100 142 112 140" fill="none" stroke="#5b3a29" stroke-width="3.5" stroke-linecap="round"/>
+              <!-- moustache -->
+              <path d="M100 136 Q80 128 66 140 Q80 136 100 140 Q120 136 134 140 Q120 128 100 136 Z" fill="#5b3a29"/>
+              <!-- whiskers -->
+              <g stroke="#5b3a29" stroke-width="2.5" stroke-linecap="round">
+                <line x1="40" y1="122" x2="12" y2="116"/><line x1="40" y1="130" x2="12" y2="134"/>
+                <line x1="160" y1="122" x2="188" y2="116"/><line x1="160" y1="130" x2="188" y2="134"/>
+              </g>
+              <!-- bow tie -->
+              <path d="M100 172 L78 160 L78 186 Z M100 172 L122 160 L122 186 Z" fill="#b28dff" stroke="#5b3a29" stroke-width="3.5" stroke-linejoin="round"/>
+              <circle cx="100" cy="173" r="6" fill="#8f63f0" stroke="#5b3a29" stroke-width="3"/>
+            </svg>
+          </button>
+          <p class="mascot-name">Maître Moustache <small>(clique-le)</small></p>
+        </div>
+      </div>
+
+      <div class="grid-3">
+        <div class="card countdown-card">
+          <p class="card-label">⏰ Examen lundi 13h30</p>
+          <div class="countdown" id="countdown">
+            <div><b id="cd-h">--</b><span>heures</span></div>
+            <div><b id="cd-m">--</b><span>min</span></div>
+            <div><b id="cd-s">--</b><span>sec</span></div>
+          </div>
+          <p class="tiny" id="cd-msg">Respire, tu gères.</p>
+        </div>
+        <div class="card stat-card">
+          <p class="card-label">📚 Fiches lues</p>
+          <p class="stat"><b id="st-fiches">0</b><span>/ 11</span></p>
+          <div class="bar"><i id="bar-fiches"></i></div>
+        </div>
+        <div class="card stat-card">
+          <p class="card-label">🏆 Meilleur quiz</p>
+          <p class="stat"><b id="st-best">—</b></p>
+          <p class="tiny" id="st-flash">0 flashcard maîtrisée</p>
+        </div>
+      </div>
+
+      <div class="card love-card">
+        <p class="love-title">💌 Mot doux du jour</p>
+        <p class="love-txt" id="loveTxt"></p>
+        <button class="btn btn-small btn-ghost" id="loveBtn">Un autre 💕</button>
+      </div>
+    </section>
+
+    <!-- ================= FICHES ================= -->
+    <section class="view" id="view-fiches" hidden>
+      <div class="page-head">
+        <h2>📚 Les fiches</h2>
+        <p>Clique sur une fiche pour l'ouvrir. Coche « J'ai lu » quand c'est dans la tête.</p>
+      </div>
+      <div id="fichesList"></div>
+    </section>
+
+    <section class="view" id="view-fiche" hidden>
+      <div id="ficheDetail"></div>
+    </section>
+
+    <!-- ================= FLASHCARDS ================= -->
+    <section class="view" id="view-flash" hidden>
+      <div class="page-head">
+        <h2>🃏 Flashcards</h2>
+        <p>Retourne la carte (clic ou espace), puis dis honnêtement si tu savais. Maître Moustache voit tout.</p>
+      </div>
+      <div class="chips" id="flashFilter"></div>
+      <div class="flash-wrap">
+        <div class="flash-count" id="flashCount"></div>
+        <div class="flashcard" id="flashcard" tabindex="0" role="button" aria-label="Retourner la carte">
+          <div class="flash-inner">
+            <div class="flash-face flash-front"><span class="flash-tag" id="flashTagF"></span><p id="flashFront"></p><small>clique pour retourner ↻</small></div>
+            <div class="flash-face flash-back"><span class="flash-tag" id="flashTagB"></span><p id="flashBack"></p></div>
+          </div>
+        </div>
+        <div class="flash-actions">
+          <button class="btn btn-no" id="flashNo">🙈 À revoir</button>
+          <button class="btn btn-yes" id="flashYes">😎 Je savais</button>
+        </div>
+        <button class="btn btn-small btn-ghost" id="flashShuffle">🔀 Mélanger</button>
+      </div>
+    </section>
+
+    <!-- ================= QUIZ ================= -->
+    <section class="view" id="view-quiz" hidden>
+      <div id="quizSetup">
+        <div class="page-head">
+          <h2>🎯 Le quiz</h2>
+          <p>Choisis les fiches et le nombre de questions. Le Conseil constitutionnel (moi) statuera.</p>
+        </div>
+        <div class="card">
+          <p class="card-label">Fiches</p>
+          <div class="chips" id="quizChips"></div>
+          <p class="card-label" style="margin-top:1.2rem">Nombre de questions</p>
+          <div class="chips" id="quizCount">
+            <button class="chip" data-n="10">10 · express</button>
+            <button class="chip on" data-n="20">20 · sérieux</button>
+            <button class="chip" data-n="40">40 · marathon</button>
+            <button class="chip" data-n="999">Toutes 😱</button>
+          </div>
+          <button class="btn btn-primary btn-big" id="quizStart">C'est parti ! 🚀</button>
+        </div>
+      </div>
+
+      <div id="quizPlay" hidden>
+        <div class="quiz-top">
+          <button class="btn btn-small btn-ghost" id="quizQuit">✕ Quitter</button>
+          <div class="quiz-progress"><i id="quizBar"></i></div>
+          <span class="quiz-score" id="quizScore">0 ✨</span>
+        </div>
+        <div class="card quiz-card" id="quizCard">
+          <span class="flash-tag" id="quizTag"></span>
+          <p class="quiz-num" id="quizNum"></p>
+          <h3 class="quiz-q" id="quizQ"></h3>
+          <div class="quiz-opts" id="quizOpts"></div>
+          <div class="quiz-feedback" id="quizFb" hidden>
+            <p class="fb-title" id="fbTitle"></p>
+            <p class="fb-expl" id="fbExpl"></p>
+            <button class="btn btn-primary" id="quizNext">Suivante →</button>
+          </div>
+        </div>
+        <p class="tiny center">Raccourcis : touches 1 à 4, puis Entrée.</p>
+      </div>
+
+      <div id="quizEnd" hidden>
+        <div class="card result-card">
+          <div class="result-emoji" id="resEmoji">🏆</div>
+          <p class="kicker">Décision n° 2026-ZILAN du Conseil</p>
+          <h2 id="resTitle"></h2>
+          <p class="result-score" id="resScore"></p>
+          <p id="resMsg"></p>
+          <div class="hero-cta center-row">
+            <button class="btn btn-primary" id="resRetry">Rejouer 🔁</button>
+            <button class="btn btn-ghost" id="resErrors">Rejouer mes erreurs 🙈</button>
+            <button class="btn btn-ghost" id="resSetup">Autre quiz</button>
+          </div>
+        </div>
+        <div id="resReview"></div>
+      </div>
+    </section>
+
+    <!-- ================= PENSE-BÊTE ================= -->
+    <section class="view" id="view-memo" hidden>
+      <div class="page-head">
+        <h2>📌 Pense-bête pour lundi</h2>
+        <p>Les trucs à relire juste avant d'entrer dans la salle (en buvant un café).</p>
+      </div>
+      <div class="card">
+        <h3>🔀 Distinctions à ne pas confondre</h3>
+        <div class="dist-grid" id="memoDist"></div>
+      </div>
+      <div class="card">
+        <h3>🔢 Les chiffres clés</h3>
+        <div class="num-grid" id="memoNums"></div>
+      </div>
+      <div class="card">
+        <h3>📅 Frise des dates</h3>
+        <ol class="timeline" id="memoDates"></ol>
+      </div>
+      <div class="card piege-card">
+        <h3>⚠️ Les pièges de tes notes (corrigés)</h3>
+        <ul class="piege-list" id="memoPieges"></ul>
+      </div>
+      <div class="card">
+        <h3>✍️ Pour la copie</h3>
+        <ul class="nice-list">
+          <li><b>Problématiques transversales</b> : stabilité / adaptabilité (révision) · organiser / limiter le pouvoir (objet du DC) · légitimité démocratique / État de droit (CC, gouvernement des juges) · souveraineté populaire / nationale.</li>
+          <li><b>Sujets probables sur le CC</b> : composition et impartialité · évolution du contrôle (1958 → 1971 → 1974 → 2008) · QPC · bloc de constitutionnalité · gouvernement des juges · contrôle des révisions (1962, Hauchemaille).</li>
+          <li><b>Méthode</b> : définir les termes clés, annoncer un plan clair, illustrer avec des décisions et des dates précises.</li>
+        </ul>
+        <p class="good-luck">Bon courage pour lundi 13h30 ! Tu vas tout déchirer 💪💖</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">Fait avec 💖 (et beaucoup trop d'emojis) pour Zilan</footer>
+
+  <div id="confetti" aria-hidden="true"></div>
+  <div class="toast" id="toast" role="status" hidden></div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
